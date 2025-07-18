@@ -148,23 +148,38 @@ body {
 
   .product-card {
     width: 90%;
-    max-width: 300px;
+    max-width: 320px;
   }
 
   .buy-form {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  .buy-form input[type="number"] {
+    gap: 8px;
     width: 100%;
   }
 
+  .buy-form input[type="number"],
   .buy-form button {
     width: 100%;
   }
 
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .navbar .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .menu a {
+    margin: 5px 0;
+  }
+
   .content {
-    padding: 60px 10px;
+    padding: 40px 10px;
   }
 }
+
