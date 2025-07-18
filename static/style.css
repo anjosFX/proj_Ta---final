@@ -139,13 +139,32 @@ body {
   font-size: 0.9rem;
 }
 
-/* Responsividade */
-@media (min-width: 600px) {
-  .product-card { width: calc(50% - 40px); }
-}
-@media (min-width: 900px) {
-  .product-card { width: calc(33.33% - 40px); }
-}
-@media (min-width: 1200px) {
-  .product-card { width: calc(25% - 40px); }
+
+@media (max-width: 599px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .buy-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buy-form input[type="number"] {
+    width: 100%;
+  }
+
+  .buy-form button {
+    width: 100%;
+  }
+
+  .content {
+    padding: 60px 10px;
+  }
 }

@@ -204,3 +204,15 @@ input[type="number"], select.form-select {
 .btn-comprar:hover {
   background: #327d32;
 }
+
+@media (max-width: 480px) {
+  .cart-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cart-actions button,
+  .cart-actions .btn-link {
+    width: 100%;
+  }
+}
