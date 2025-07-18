@@ -14,7 +14,11 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 
 /* Navbar */
 .navbar {
@@ -47,7 +51,9 @@ body {
   padding: 80px 20px 40px;
   max-width: 100%;
   margin: auto;
+  flex: 1;  /* Novo: faz o conteúdo ocupar o espaço entre navbar e rodapé */
 }
+
 
 .content h1 {
   text-align: center;
@@ -135,9 +141,9 @@ body {
   text-align: center;
   padding: 15px;
   border-top: 1px solid var(--border);
-  margin-top: 400px;
   font-size: 0.9rem;
 }
+
 
 
 @media (max-width: 599px) {
@@ -149,17 +155,24 @@ body {
   .product-card {
     width: 90%;
     max-width: 320px;
+    font-size: 14px;
+  }
+
+  .product-card strong,
+  .product-card p {
+    font-size: 13px;
   }
 
   .buy-form {
     flex-direction: column;
-    gap: 8px;
     width: 100%;
+    gap: 6px;
   }
 
   .buy-form input[type="number"],
   .buy-form button {
     width: 100%;
+    font-size: 14px;
   }
 
   .navbar {
@@ -176,10 +189,16 @@ body {
 
   .navbar .menu a {
     margin: 5px 0;
+    font-size: 14px;
   }
 
   .content {
     padding: 40px 10px;
+  }
+
+  .footer {
+    margin-top: 40px; /* reduz o espaçamento para celular */
+    position: relative;
   }
 }
 
